@@ -4,10 +4,6 @@ title: "Passing the Zscaler Zero Trust Certified Associate certification (ZTCA)"
 date: 2025-08-24T18:13:34
 ---
 
-# Passing the Zscaler Zero Trust Certified Associate certification (ZTCA)
-
-Hi folks, another certification success story here, this time it is the Zsclaer Zero Trust Certified Associate exam. I have joined a new… 
-
 * * *
 
 ### Passing the Zscaler Zero Trust Certified Associate certification (ZTCA)

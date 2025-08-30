@@ -4,10 +4,6 @@ title: "Passing AWS Certified Solutions Architect — Professional with 5 we
 date: 2025-08-24T18:13:36
 ---
 
-# Passing AWS Certified Solutions Architect — Professional with 5 weeks of prep
-
-I have been putting this off for a few years now. Back in 2019 I was early on to my AWS journey and set out to gain a lot of knowledge and… 
-
 * * *
 
 ### Passing AWS Certified Solutions Architect — Professional with 5 weeks of prep

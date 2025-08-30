@@ -4,10 +4,6 @@ title: "How I passed the AWS Certified Security — Specialty exam SCS-C02 i
 date: 2025-08-24T18:13:32
 ---
 
-# How I passed the AWS Certified Security — Specialty exam SCS-C02 in 4 weeks!
-
-Hi there, I am back with another certification success story and study tips. This time it’s for the new AWS Certified Security — Specialty… 
-
 * * *
 
 ### How I passed the AWS Certified Security — Specialty exam SCS-C02 in 4 weeks!

@@ -4,10 +4,6 @@ title: "Integrating Entra B2C with Amazon API Gateway using JWT authorizer"
 date: 2025-08-24T18:13:34
 ---
 
-# Integrating Entra B2C with Amazon API Gateway using JWT authorizer
-
-Entra ID can integrate with Amazon API Gateway using the Oauth2 authorization protocol. This is particularly useful if you want to secure… 
-
 * * *
 
 ### Integrating Entra B2C with Amazon API Gateway using JWT authorizer

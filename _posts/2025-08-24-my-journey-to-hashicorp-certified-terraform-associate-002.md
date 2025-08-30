@@ -4,10 +4,6 @@ title: "My Journey to HashiCorp Certified: Terraform Associate (002)"
 date: 2025-08-24T18:13:36
 ---
 
-# My Journey to HashiCorp Certified: Terraform Associate (002)
-
-There is a lot of buzz around this certification which is not so new anymore. Back in 2021 my AWS DevOps team began moving away from… 
-
 * * *
 
 ### My Journey to HashiCorp Certified: Terraform Associate (002)

@@ -4,10 +4,6 @@ title: "Snyk — The Big Fix and how to make it to the top as a DevSecOps En
 date: 2025-08-24T18:13:36
 ---
 
-# Snyk — The Big Fix and how to make it to the top as a DevSecOps Engineer
-
-What is this all about? 
-
 * * *
 
 ### Snyk — The Big Fix and how to make it to the top as a DevSecOps Engineer

@@ -4,10 +4,6 @@ title: "AWS Transit Gateway Connect to Palo Alto Firewalls -SD-WAN like architec
 date: 2025-08-24T18:13:34
 ---
 
-# AWS Transit Gateway Connect to Palo Alto Firewalls -SD-WAN like architecture?
-
-AWS announced the TGW Connect attachment a couple of years ago, in the hopes of making SD-WAN connectivity to the cloud seamless and vendor… 
-
 * * *
 
 ### AWS Transit Gateway Connect to Palo Alto Firewalls -SD-WAN like architecture?
