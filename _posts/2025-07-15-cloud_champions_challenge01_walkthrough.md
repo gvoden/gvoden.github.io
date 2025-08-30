@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "# 🕵️‍♂️ Cracking Cloud Champions Challenge 01: AWS Metadata Abuse and Pre-Signed URL Exfiltration"
+title: "🕵️‍♂️ Cracking Cloud Champions Challenge 01: AWS Metadata Abuse and Pre-Signed URL Exfiltration"
 date: 2025-07-30
 ---
 
