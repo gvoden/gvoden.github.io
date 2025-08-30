@@ -1,0 +1,17 @@
+---
+layout: default
+title: Home
+---
+
+<h1>Welcome</h1>
+<p>This is my new blog powered by <strong>GitHub Pages + Jekyll Hacker theme</strong> 🚀</p>
+<p>Check out my latest posts below:</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span style="color: gray;">— {{ post.date | date: "%B %d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>
