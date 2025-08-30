@@ -1,18 +1,21 @@
 ---
 layout: default
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About Me
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Hi, I’m **Georgi** 👋  
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I’m a **Information Security Engineer and Network Architect** with a passion for cloud security, automation, and DevSecOps.  
 
 
-[jekyll-organization]: https://github.com/jekyll
+Outside of work, I enjoy continuous learning, attending security conferences, and contributing to open-source projects like **Kubernetes Goat**.  
+
+---
+
+📫 **Connect with me:**
+- [LinkedIn](https://www.linkedin.com/in/gvoden)  
+- [GitHub](https://github.com/gvoden)  
+- Email: `your.email@example.com`

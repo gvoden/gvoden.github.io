@@ -1,5 +1,5 @@
-title: "My Blog"
-description: "Imported Medium articles"
+title: "Secure by Design"
+description: "Exploring Cloud Security, DevSecOps, and Resilient Architectures"
 baseurl: "" # leave empty unless deploying to a subpath
 url: "https://gvoden.github.io"
 

@@ -5,8 +5,15 @@ title: Home
 
 <h1>Welcome</h1>
 <p>This is my new blog powered by <strong>GitHub Pages + Jekyll Hacker theme</strong> 🚀</p>
-<p>Check out my latest posts below:</p>
 
+<nav>
+  <a href="{{ "/" | relative_url }}">Home</a> |
+  <a href="{{ "/about/" | relative_url }}">About Me</a>
+</nav>
+
+<hr>
+
+<h2>Latest Posts</h2>
 <ul>
   {% for post in site.posts %}
     <li>
@@ -15,3 +22,4 @@ title: Home
     </li>
   {% endfor %}
 </ul>
+
