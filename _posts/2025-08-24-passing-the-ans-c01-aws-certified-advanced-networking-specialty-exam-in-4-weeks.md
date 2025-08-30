@@ -6,8 +6,6 @@ date: 2025-08-24T18:13:34
 
 * * *
 
-### Passing the ANS-C01 AWS Certified Advanced Networking — Specialty exam in 4 weeks!
-
 ![](/assets/images/passing-the-ans-c01-aws-certified-advanced-networking-specialty-exam-in-4-weeks-0.png)
 
 ### A quick background:
@@ -33,8 +31,4 @@ I took the exam at a test center (PSI) just before AWS switched to Pearson Vue. 
 
 NOTE: I have 15+ years of experience in IT as a network engineer, firewall and server administrator and security specialist on multiple platforms and 5+ years of working with AWS. Your mileage may vary in terms of prep duration depending on your skills and experience in the field.
 
-By [Georgi_V](https://medium.com/@gvoden) on [February 21, 2023](https://medium.com/p/e3972107f45b).
-
-[Canonical link](https://medium.com/@gvoden/passing-the-ans-c01-aws-certified-advanced-networking-specialty-exam-in-4-weeks-e3972107f45b)
-
-Exported from [Medium](https://medium.com) on August 24, 2025.
+By [Georgi_V](https://www.linkedin.com/in/gvoden/) on [February 21, 2023].

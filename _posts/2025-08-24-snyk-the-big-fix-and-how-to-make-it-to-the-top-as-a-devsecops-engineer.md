@@ -6,8 +6,6 @@ date: 2025-08-24T18:13:36
 
 * * *
 
-### Snyk — The Big Fix and how to make it to the top as a DevSecOps Engineer
-
 ![](/assets/images/snyk-the-big-fix-and-how-to-make-it-to-the-top-as-a-devsecops-engineer-0.png)
 
 * * *
@@ -61,8 +59,4 @@ I hope I was able to demonstrate how this fun exercise can teach you more about 
 
 Happy fixing! And check out the Snyk Learn portal to sharpen your AppSec skills and knowledge, it is a free resource: https://learn.snyk.io/
 
-By [Georgi_V](https://medium.com/@gvoden) on [March 20, 2023](https://medium.com/p/e11ddc97a4df).
-
-[Canonical link](https://medium.com/@gvoden/snyk-the-big-fix-and-how-to-make-it-to-the-top-as-a-devsecops-engineer-e11ddc97a4df)
-
-Exported from [Medium](https://medium.com) on August 24, 2025.
+By [Georgi_V](https://www.linkedin.com/in/gvoden/) on [March 20, 2023].

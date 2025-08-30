@@ -6,8 +6,6 @@ date: 2025-08-24T18:13:34
 
 * * *
 
-### Integrating Entra B2C with Amazon API Gateway using JWT authorizer
-
 Entra ID can integrate with Amazon API Gateway using the Oauth2 authorization protocol. This is particularly useful if you want to secure APIs for machine to machine calls and you are familiar with Azure and choose not to use Amazon Cognito or an alternative IdP. The below diagram depicts a Entra ID B2C integration for the Client Credentials oauth grant:
 
 ![](/assets/images/integrating-entra-b2c-with-amazon-api-gateway-using-jwt-authorizer-0.png)High level architecture, open sourced, courtesy of <https://github.com/secinaction101/azureadawsapigateway>
@@ -65,8 +63,4 @@ Flows configuration button missing in the GUI. This was super tricky as I had st
 
 Also, this article came in handy while troubleshooting the configurations: <https://stackoverflow.com/questions/72781554/azure-ad-b2c-breaks-oidc-spec>
 
-By [Georgi_V](https://medium.com/@gvoden) on [April 22, 2024](https://medium.com/p/926d8966141e).
-
-[Canonical link](https://medium.com/@gvoden/integrating-entra-b2c-with-amazon-api-gateway-using-jwt-authorizer-926d8966141e)
-
-Exported from [Medium](https://medium.com) on August 24, 2025.
+By [Georgi_V](https://www.linkedin.com/in/gvoden/) on [April 22, 2024].

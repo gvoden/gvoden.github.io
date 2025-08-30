@@ -6,8 +6,6 @@ date: 2025-08-24T18:13:32
 
 * * *
 
-### How I passed the AWS Certified Security — Specialty exam SCS-C02 in 4 weeks!
-
 ![](/assets/images/how-i-passed-the-aws-certified-security-specialty-exam-scs-c02-in-4-weeks-0.png)
 
 Hi there, I am back with another certification success story and study tips. This time it’s for the new AWS Certified Security — Specialty exam SCS-C02 which was released in July 2023. New exam domains have been updated and you can read about this here: <https://tutorialsdojo.com/whats-new-in-aws-certified-security-specialty-scs-c02-exam-in-2023/>
@@ -61,8 +59,5 @@ I hope this is helpful and gives ideas on how to manage your time if you are on 
 
 Cheers!
 
-By [Georgi_V](https://medium.com/@gvoden) on [December 17, 2023](https://medium.com/p/68c88efd9ce8).
+By [Georgi_V](https://www.linkedin.com/in/gvoden/) on [December 17, 2023].
 
-[Canonical link](https://medium.com/@gvoden/how-i-passed-the-aws-certified-security-specialty-exam-scs-c02-in-4-weeks-68c88efd9ce8)
-
-Exported from [Medium](https://medium.com) on August 24, 2025.

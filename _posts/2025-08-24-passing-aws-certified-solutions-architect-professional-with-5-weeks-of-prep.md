@@ -6,8 +6,6 @@ date: 2025-08-24T18:13:36
 
 * * *
 
-### Passing AWS Certified Solutions Architect — Professional with 5 weeks of prep
-
 ![](/assets/images/passing-aws-certified-solutions-architect-professional-with-5-weeks-of-prep-0.png)
 
 I have been putting this off for a few years now. Back in 2019 I was early on to my AWS journey and set out to gain a lot of knowledge and hands on experience. I pushed myself to obtain the AWS Certified Developer Associate and AWS Certified DevOps Professional back to back. I did however fail the AWS Certified Solutions Architect — Professional. It felt like a test which was an exercise in fast reading and I was short of a few points to make the pass.
@@ -37,8 +35,4 @@ I took the exam at a test center — I don’t want to stress over Internet conn
 
 Pearson Vue tends to take extra time to review/score your test so you may not get your results immediately. I had to wait a full day, I believe this is due to a lot of concerns over people cheating on remotely proctored exams. That being said I got my Credly badge email early morning next day and then my results were recorded in my AWS certification account. One thing which is a bit of a bummer is, AWS does not offer the certification store benefit any more, I am not sure what the reason for that may be. However it felt great to earn this certification as a proof of my 5+ years of working with AWS and it’s also a great one for the resume or LinkedIn and of course, bragging rights.
 
-By [Georgi_V](https://medium.com/@gvoden) on [February 15, 2023](https://medium.com/p/1000e6c1ce23).
-
-[Canonical link](https://medium.com/@gvoden/passing-aws-certified-solutions-architect-professional-with-5-weeks-of-prep-1000e6c1ce23)
-
-Exported from [Medium](https://medium.com) on August 24, 2025.
+By [Georgi_V](https://www.linkedin.com/in/gvoden/) on [February 15, 2023].

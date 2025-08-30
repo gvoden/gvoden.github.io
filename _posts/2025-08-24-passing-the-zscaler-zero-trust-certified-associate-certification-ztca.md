@@ -6,8 +6,6 @@ date: 2025-08-24T18:13:34
 
 * * *
 
-### Passing the Zscaler Zero Trust Certified Associate certification (ZTCA)
-
 Hi folks, another certification success story here, this time it is the Zsclaer Zero Trust Certified Associate exam. I have joined a new team at my company and my role is shifting from DevSecOps to a InfoSec role where I get to use a variety of tools to protect my company and enterprise user community.
 
 ### About the certification
@@ -48,8 +46,4 @@ Finally, it feels great to get the Credly badge upon complition, certifying your
 
 Good luck!
 
-By [Georgi_V](https://medium.com/@gvoden) on [May 12, 2024](https://medium.com/p/fa9938114685).
-
-[Canonical link](https://medium.com/@gvoden/passing-the-zscaler-zero-trust-certified-associate-certification-ztca-fa9938114685)
-
-Exported from [Medium](https://medium.com) on August 24, 2025.
+By [Georgi_V](https://www.linkedin.com/in/gvoden/) on [May 12, 2024].

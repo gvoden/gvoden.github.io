@@ -6,8 +6,6 @@ date: 2025-08-24T18:13:36
 
 * * *
 
-### My Journey to HashiCorp Certified: Terraform Associate (002)
-
 ![](/assets/images/my-journey-to-hashicorp-certified-terraform-associate-002-0.png)
 
 There is a lot of buzz around this certification which is not so new anymore. Back in 2021 my AWS DevOps team began moving away from CloudFormation in favor of Terraform for a couple of reasons:
@@ -45,8 +43,4 @@ Newsletter — [https://weekly.tf](https://t.co/QwAzWSU7JJ)
 
 DevOps Toolkit — YouTube Channel, not just TF but anything on DevOps/Kubernetes etc with Viktor Farcic [https://youtube.com/channel/UCfz8x0lVzJpb_dgWm9kPVrw](https://t.co/Fe7FWy0n2A)
 
-By [Georgi_V](https://medium.com/@gvoden) on [January 11, 2023](https://medium.com/p/e13d4109b00e).
-
-[Canonical link](https://medium.com/@gvoden/my-journey-to-hashicorp-certified-terraform-associate-002-e13d4109b00e)
-
-Exported from [Medium](https://medium.com) on August 24, 2025.
+By [Georgi_V](https://www.linkedin.com/in/gvoden/) on [January 11, 2023].

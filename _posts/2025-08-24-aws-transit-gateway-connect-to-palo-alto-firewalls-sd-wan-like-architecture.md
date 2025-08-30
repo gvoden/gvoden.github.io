@@ -6,8 +6,6 @@ date: 2025-08-24T18:13:34
 
 * * *
 
-### AWS Transit Gateway Connect to Palo Alto Firewalls -SD-WAN like architecture?
-
 AWS announced the TGW Connect attachment a couple of years ago, in the hopes of making SD-WAN connectivity to the cloud seamless and vendor agnostic with a couple of deployment architectures. I decided to give it a spin and see what it is all about and whether it is as easy to setup as it looks.
 
 Context: My lab and blog are based on the design described in this blog post: <https://aws.amazon.com/blogs/networking-and-content-delivery/simplify-sd-wan-connectivity-with-aws-transit-gateway-connect/> with a twist — I do not have an on prem SD-WAN device and opted for a regular IPSEC tunnel to a mock site using AWS VGW as the termination device.
@@ -67,8 +65,4 @@ Cisco Live 2023 Las Vegas — <https://www.ciscolive.com/on-demand/on-demand-det
 
 ![](/assets/images/aws-transit-gateway-connect-to-palo-alto-firewalls-sd-wan-like-architecture-4.png)
 
-By [Georgi_V](https://medium.com/@gvoden) on [June 30, 2023](https://medium.com/p/adbb5514c6ef).
-
-[Canonical link](https://medium.com/@gvoden/aws-transit-gateway-connect-to-palo-alto-firewalls-sd-wan-like-architecture-adbb5514c6ef)
-
-Exported from [Medium](https://medium.com) on August 24, 2025.
+By [Georgi_V](https://www.linkedin.com/in/gvoden/) on [June 30, 2023].
