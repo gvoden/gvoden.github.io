@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>AWS Transit Gateway Connect to Palo Alto Firewalls -SD-WAN like architecture?</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">AWS Transit Gateway Connect to Palo Alto Firewalls -SD-WAN like architecture?</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+AWS announced the TGW Connect attachment a couple of years ago, in the hopes of making SD-WAN connectivity to the cloud seamless and vendor…
+</section>
+<section data-field="body" class="e-content">
+<section name="7d60" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="dbfb" id="dbfb" class="graf graf--h3 graf--leading graf--title">AWS Transit Gateway Connect to Palo Alto Firewalls -SD-WAN like architecture?</h3><p name="b4e9" id="b4e9" class="graf graf--p graf-after--h3">AWS announced the TGW Connect attachment a couple of years ago, in the hopes of making SD-WAN connectivity to the cloud seamless and vendor agnostic with a couple of deployment architectures. I decided to give it a spin and see what it is all about and whether it is as easy to setup as it looks.</p><p name="9cba" id="9cba" class="graf graf--p graf-after--p">Context: My lab and blog are based on the design described in this blog post: <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/simplify-sd-wan-connectivity-with-aws-transit-gateway-connect/" data-href="https://aws.amazon.com/blogs/networking-and-content-delivery/simplify-sd-wan-connectivity-with-aws-transit-gateway-connect/" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://aws.amazon.com/blogs/networking-and-content-delivery/simplify-sd-wan-connectivity-with-aws-transit-gateway-connect/</a> with a twist — I do not have an on prem SD-WAN device and opted for a regular IPSEC tunnel to a mock site using AWS VGW as the termination device.</p><figure name="608e" id="608e" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*VUV0vV30pf6w72-O3x2rBw.jpeg" data-width="621" data-height="1131" src="https://cdn-images-1.medium.com/max/800/1*VUV0vV30pf6w72-O3x2rBw.jpeg"></figure><h3 name="f3dd" id="f3dd" class="graf graf--h3 graf-after--figure">The steps to configure AWS Transit Gateway are posted in the Amazon blog post referenced above. Some gotchas/tips:</h3><ol class="postList"><li name="eadf" id="eadf" class="graf graf--li graf-after--h3">Make sure you have assigned a CIDR to your Transit Gateway ss it will be acting as a GRE peer to your NVA/firewalls.</li><li name="2854" id="2854" class="graf graf--li graf-after--li">When you create a Connect Peer AWS will provide you with 2 BGP peers — you do not need to peer your firewall to both but you could choose to do so if you want some additional redundancy:</li></div><div class="section-inner sectionLayout--outsetColumn"></ol><figure name="b542" id="b542" class="graf graf--figure graf--layoutOutsetCenter graf-after--li"><img class="graf-image" data-image-id="1*sHNrNzMsR8ii7VyvtvHddQ.png" data-width="1196" data-height="96" src="https://cdn-images-1.medium.com/max/1200/1*sHNrNzMsR8ii7VyvtvHddQ.png"></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="688f" id="688f" class="graf graf--p graf-after--figure">3. Ensure that you use distinct BGP ASN for your firewall, Transit Gateway and VPN Gateway for eBGP peering</p><h3 name="879a" id="879a" class="graf graf--h3 graf-after--p">Palo Alto Firewall side configuration tips:</h3><ol class="postList"><li name="7a70" id="7a70" class="graf graf--li graf-after--h3">You will require 2 x tunnel interfaces, one tunnel interface facing Transit Gateway and acting as BGP peer and a second tunnel interface acting as the BGP peer towards the AWS VGW gateway. What can be confusing initially is what IP addresses to assign, you will have to carve out 169.254.x.x IP addresses for this: <a href="https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html" data-href="https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html</a></li><li name="99a0" id="99a0" class="graf graf--li graf-after--li">GRE Tunnel config: Palo Alto requires a static IP for the Local Address configuration, this threw me off quite a bit:</li></ol><figure name="e2e6" id="e2e6" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*ZpZW6CPyu1BAJTc5sNxE-g.png" data-width="540" data-height="320" src="https://cdn-images-1.medium.com/max/800/1*ZpZW6CPyu1BAJTc5sNxE-g.png"></figure><p name="af68" id="af68" class="graf graf--p graf-after--figure">Amazon VPC assigns IP addresses to your ENI via DHCP, you cannot have a statically assigned IP on your interface. You need to take the VPC assigned ENI IP and configure the same IP for your firewall ethernet interface, otherwise you will not be able to configure the GRE tunnel facing Transit Gateway. Hopefully Palo will find a cleaner way of doing this and it is not very well documented. Most documentation I found was for on prem networking and not AWS TGW.</p><p name="f82c" id="f82c" class="graf graf--p graf-after--p">3. eBGP Multihop is required for your peer to come up, as per AWS:</p><ul class="postList"><li name="9203" id="9203" class="graf graf--li graf-after--p">Exterior BGP (eBGP): Used for connecting to routers that are in a different autonomous system than the transit gateway. If you use eBGP, you must configure ebgp-multihop with a time-to-live (TTL) value of 2. Some useful docs here:</li></ul><p name="fd1f" id="fd1f" class="graf graf--p graf-after--li"><a href="https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html" data-href="https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html</a> and <a href="https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClKkCAK" data-href="https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClKkCAK" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClKkCAK</a></p><p name="6b03" id="6b03" class="graf graf--p graf-after--p">4. IPSEC Tips: This is another gotcha which is particular to deploying PAN in a public cloud. When configuring your IKE gateway you need to leave the Local IP Address setting as None (in the physical world this is never the case). Instead you supply a Local Identification IP and Peer Identification IP as per the screenshot:</p><figure name="480b" id="480b" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*_RUHIg4iWUuUKuYbzfSxQQ.png" data-width="686" data-height="517" src="https://cdn-images-1.medium.com/max/800/1*_RUHIg4iWUuUKuYbzfSxQQ.png"></figure><p name="03e8" id="03e8" class="graf graf--p graf-after--figure">More details as to why this is needed over here:</p><div name="7f90" id="7f90" class="graf graf--mixtapeEmbed graf-after--p"><a href="https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PP5OCAW&amp;refURL=http%3A%2F%2Fknowledgebase.paloaltonetworks.com%2FKCSArticleDetail" data-href="https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PP5OCAW&amp;refURL=http%3A%2F%2Fknowledgebase.paloaltonetworks.com%2FKCSArticleDetail" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PP5OCAW&amp;refURL=http%3A%2F%2Fknowledgebase.paloaltonetworks.com%2FKCSArticleDetail"><strong class="markup--strong markup--mixtapeEmbed-strong">IKE Phase-1 negotiation failure due to missing identification for PA-VM deployed in Azure</strong><br><em class="markup--em markup--mixtapeEmbed-em">Navigate to Firewall WebUI &amp;gt; Network &amp;gt; Network Profile &amp;gt; IKE Gateways &amp;gt; Configure Local Identification as…</em>knowledgebase.paloaltonetworks.com</a><a href="https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PP5OCAW&amp;refURL=http%3A%2F%2Fknowledgebase.paloaltonetworks.com%2FKCSArticleDetail" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="4161701572b02ebc6b231346ecf79fce" data-thumbnail-img-id="0*MN0UaHNcO-Yzkj84" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*MN0UaHNcO-Yzkj84);"></a></div><h3 name="7674" id="7674" class="graf graf--h3 graf-after--mixtapeEmbed">Final Thoughts</h3><p name="38f2" id="38f2" class="graf graf--p graf-after--h3">Above are some tips that will help you get started with Palo Alto and Amazon Transit Gateway Connect. I did not list each individual step since that will take away from learning but the tips I am providing will definitely save you time and effort. This proves that traditional network architecture can be replicated in the cloud, GRE is recommended if you want to bundle up several tunnels for increased throughput between your TGW and NVA/firewall.</p><p name="fa08" id="fa08" class="graf graf--p graf-after--p">Additional resources for learning which I found very useful:</p><div name="1e46" id="1e46" class="graf graf--mixtapeEmbed graf-after--p"><a href="https://aws.amazon.com/blogs/networking-and-content-delivery/scaling-vpn-throughput-using-aws-transit-gateway/" data-href="https://aws.amazon.com/blogs/networking-and-content-delivery/scaling-vpn-throughput-using-aws-transit-gateway/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://aws.amazon.com/blogs/networking-and-content-delivery/scaling-vpn-throughput-using-aws-transit-gateway/"><strong class="markup--strong markup--mixtapeEmbed-strong">Scaling VPN throughput using AWS Transit Gateway | Amazon Web Services</strong><br><em class="markup--em markup--mixtapeEmbed-em">A virtual private network (VPN) is one of the most common ways that customers connect securely to the AWS Cloud from…</em>aws.amazon.com</a><a href="https://aws.amazon.com/blogs/networking-and-content-delivery/scaling-vpn-throughput-using-aws-transit-gateway/" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="ace3e6930110a736a8e62ac24713add3" data-thumbnail-img-id="0*wG0aroHpHx_auD4X" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*wG0aroHpHx_auD4X);"></a></div><div name="1f77" id="1f77" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a href="https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA14u000000wkpBCAQ" data-href="https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA14u000000wkpBCAQ" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA14u000000wkpBCAQ"><strong class="markup--strong markup--mixtapeEmbed-strong">How to verify GRE tunnel operation using CLI commands</strong><br><em class="markup--em markup--mixtapeEmbed-em">This article explains CLI commands that can be used to verify working of a GRE tunnel.</em>knowledgebase.paloaltonetworks.com</a><a href="https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA14u000000wkpBCAQ" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock" data-media-id="6be3a1aec4f989e2b824a81c72b738ae"></a></div><p name="3ba3" id="3ba3" class="graf graf--p graf-after--mixtapeEmbed">Cisco Live 2023 Las Vegas — <a href="https://www.ciscolive.com/on-demand/on-demand-details.html?#/session/1686177773738001VLzw" data-href="https://www.ciscolive.com/on-demand/on-demand-details.html?#/session/1686177773738001VLzw" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://www.ciscolive.com/on-demand/on-demand-details.html?#/session/1686177773738001VLzw</a></p><figure name="5137" id="5137" class="graf graf--figure graf-after--p graf--trailing"><img class="graf-image" data-image-id="1*1pYy_-WTfV_dUO5-mEvD-A.png" data-width="1001" data-height="365" src="https://cdn-images-1.medium.com/max/800/1*1pYy_-WTfV_dUO5-mEvD-A.png"></figure></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@gvoden" class="p-author h-card">Georgi_V</a> on <a href="https://medium.com/p/adbb5514c6ef"><time class="dt-published" datetime="2023-06-30T13:55:38.899Z">June 30, 2023</time></a>.</p><p><a href="https://medium.com/@gvoden/aws-transit-gateway-connect-to-palo-alto-firewalls-sd-wan-like-architecture-adbb5514c6ef" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 24, 2025.</p></footer></article></body></html>

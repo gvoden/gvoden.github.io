@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Snyk — The Big Fix and how to make it to the top as a DevSecOps Engineer</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Snyk — The Big Fix and how to make it to the top as a DevSecOps Engineer</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+What is this all about?
+</section>
+<section data-field="body" class="e-content">
+<section name="0296" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="57e9" id="57e9" class="graf graf--h3 graf--leading graf--title">Snyk — The Big Fix and how to make it to the top as a DevSecOps Engineer</h3><figure name="5824" id="5824" class="graf graf--figure graf-after--h3 graf--trailing"><img class="graf-image" data-image-id="1*0rLVYwBlO4Q_2I3n02r0_g.png" data-width="973" data-height="757" src="https://cdn-images-1.medium.com/max/800/1*0rLVYwBlO4Q_2I3n02r0_g.png"></figure></div></div></section><section name="c7ac" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="0f59" id="0f59" class="graf graf--h3 graf--leading">What is this all about?</h3><p name="5695" id="5695" class="graf graf--p graf-after--h3"><em class="markup--em markup--p-em">From Snyk Blog:</em> The Big Fix is a month-long fix-a-thon that brings developers and security professionals together to fix vulnerabilities and help make the software ecosystem safer for everyone! The Big Fix helps any developer (with any level of security experience) find and fix vulnerabilities in their software. <a href="https://snyk.io/blog/the-big-fix-2023/" data-href="https://snyk.io/blog/the-big-fix-2023/" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://snyk.io/blog/the-big-fix-2023/</a></p><p name="cd29" id="cd29" class="graf graf--p graf-after--p">I am not a developer however I work as a DevSecOps engineer so this immediately peaked my interest. I had used Snyk at work and it’s a pretty comprehensive AppSec platform that can scan your code, dependencies, embed in your IDE, GitHub, Kubernetes, container registries and so on. I saw this as an opportunity to have some fun with the platform and take my security skills even further. AppSec is a hot topic and it is made out to be this exclusive niche of InfoSec where only the super coders are allowed. I will dispel this myth in this blog post. It is all about risk management and how to leverage the tools at your disposal.</p><h3 name="b9cc" id="b9cc" class="graf graf--h3 graf-after--p">How to get started?</h3><p name="1273" id="1273" class="graf graf--p graf-after--h3">This was super easy, following these steps:</p><ol class="postList"><li name="0845" id="0845" class="graf graf--li graf-after--p">Sign-up for The Big Fix here: <a href="https://snyk.io/events/the-big-fix#sign-up" data-href="https://snyk.io/events/the-big-fix#sign-up" class="markup--anchor markup--li-anchor" rel="noopener noreferrer noopener" target="_blank"><strong class="markup--strong markup--li-strong">https://snyk.io/events/the-big-fix</strong></a></li><li name="bc8b" id="bc8b" class="graf graf--li graf-after--li">Register for a free Snyk account (<a href="https://snyk.io/plans/" data-href="https://snyk.io/plans/" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://snyk.io/plans/</a>)</li><li name="0198" id="0198" class="graf graf--li graf-after--li">Add your projects to The Big Fix (these can be any projects, such as public GitHub, Azure DevOps repos etc. For public GitHub, you can fork a repo and use the fork as a project if the repo does not allow direct changes).</li></ol><figure name="b1ec" id="b1ec" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*E0N-mSTmdLxEwgvIbQb9XQ.png" data-width="462" data-height="141" src="https://cdn-images-1.medium.com/max/800/1*E0N-mSTmdLxEwgvIbQb9XQ.png"><figcaption class="imageCaption">Add a project from your personal Snyk tenant:</figcaption></figure><p name="23eb" id="23eb" class="graf graf--p graf-after--figure">I imported some of my personal GitHub repos that I had used in other projects. Snyk would immediately add the projects and scan them for vulnerabilities. It has a very comprehensive scoring system as well as out of the box solutions on how to fix vulnerabilities in code, Kubernetes RBAC etc. I played around updating a few YAML definitions that had excessive permissions or allowed pods to run as root. However I quickly realized this would not get me enough points in the competition and just does not scale.</p><h3 name="00f9" id="00f9" class="graf graf--h3 graf-after--p">Strategy change</h3><p name="21c3" id="21c3" class="graf graf--p graf-after--h3">I decided to search public GitHub for purposefully vulnerable projects that I could use for the competition and that are also a great learning resource for AppSec, here are a few:</p><div name="0035" id="0035" class="graf graf--mixtapeEmbed graf-after--p"><a href="https://github.com/ne0z/DamnVulnerableMicroServices" data-href="https://github.com/ne0z/DamnVulnerableMicroServices" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/ne0z/DamnVulnerableMicroServices"><strong class="markup--strong markup--mixtapeEmbed-strong">GitHub - ne0z/DamnVulnerableMicroServices: This is vulnerable microservice written in many language…</strong><br><em class="markup--em markup--mixtapeEmbed-em">Damn Vulnerable Microservices (DVMS) is microservices that is damn vulnerable with no exception. These project goals…</em>github.com</a><a href="https://github.com/ne0z/DamnVulnerableMicroServices" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="7d493324adb294d938605a51460b79cb" data-thumbnail-img-id="0*9enNzcu_K7vrX62e" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*9enNzcu_K7vrX62e);"></a></div><div name="1531" id="1531" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a href="https://github.com/vulhub/vulhub" data-href="https://github.com/vulhub/vulhub" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/vulhub/vulhub"><strong class="markup--strong markup--mixtapeEmbed-strong">GitHub - vulhub/vulhub: Pre-Built Vulnerable Environments Based on Docker-Compose</strong><br><em class="markup--em markup--mixtapeEmbed-em">Vulhub is an open-source collection of pre-built vulnerable docker environments. No pre-existing knowledge of docker is…</em>github.com</a><a href="https://github.com/vulhub/vulhub" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="ff045c7f0f7a3afdb4c31fa1907d5af3" data-thumbnail-img-id="0*mh8DW6WL7p8m3sRf" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*mh8DW6WL7p8m3sRf);"></a></div><div name="ca84" id="ca84" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a href="https://github.com/madhuakula/kubernetes-goat" data-href="https://github.com/madhuakula/kubernetes-goat" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/madhuakula/kubernetes-goat"><strong class="markup--strong markup--mixtapeEmbed-strong">GitHub - madhuakula/kubernetes-goat: Kubernetes Goat is a &quot;Vulnerable by Design&quot; cluster…</strong><br><em class="markup--em markup--mixtapeEmbed-em">Kubernetes Goat is a &quot;Vulnerable by Design&quot; cluster environment to learn and practice Kubernetes security using an…</em>github.com</a><a href="https://github.com/madhuakula/kubernetes-goat" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="d3ec5f0262c46a66f5e59872733e8d9c" data-thumbnail-img-id="0*632nYEjYefF2-Zhy" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*632nYEjYefF2-Zhy);"></a></div><p name="63aa" id="63aa" class="graf graf--p graf-after--mixtapeEmbed">Turns out that Snyk is really effective and efficient when it comes to Docker image vulnerabilities. For example looking at this specific image, you would notice that Snyk would suggest minor or alternative upgrades you could apply and that would immediately kill off 100+ vulnerabilities:</p><figure name="335b" id="335b" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*7FMSfSsIxrIKIuTiIRN7wA.png" data-width="1598" data-height="701" src="https://cdn-images-1.medium.com/max/800/1*7FMSfSsIxrIKIuTiIRN7wA.png"></figure><p name="d655" id="d655" class="graf graf--p graf-after--figure">You can then open a fix PR (pull request) in order to apply the update in your own repo (Azure DevOps in this scenario):</p><p name="4c67" id="4c67" class="graf graf--p graf-after--p">This would take you to Azure DevOps where you could review the change and then approve and merge it into your main branch:</p><figure name="ce5c" id="ce5c" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*JuvGNUo2cvX92s8Rev5HKw.png" data-width="1583" data-height="901" src="https://cdn-images-1.medium.com/max/800/1*JuvGNUo2cvX92s8Rev5HKw.png"><figcaption class="imageCaption">Azure DevOps Pull Request</figcaption></figure><p name="8679" id="8679" class="graf graf--p graf-after--figure">Snyk would automatically re-scan your repo and report the fixed vulnerabilities to Bix Fix website where your score will be calculated and added to the leaderboard. So as you can see, fixing container vulnerabilities is super easy as you do not have to research what base image to upgrade to and the tool will make recommendations for you. In the case of public GitHub, there is also a Snyk bot that can open PR automatically for you.</p><h3 name="1bfd" id="1bfd" class="graf graf--h3 graf-after--p">Final Thoughts</h3><p name="3158" id="3158" class="graf graf--p graf-after--h3">I hope I was able to demonstrate how this fun exercise can teach you more about application security, prioritization and vulnerabilities found in containers in a very fun and gamified way. I am now waiting for my Snyk T-shirt that would be awarded to all participants who fixed at least one exploit or vulnerability.</p><p name="dea4" id="dea4" class="graf graf--p graf-after--p graf--trailing">Happy fixing! And check out the Snyk Learn portal to sharpen your AppSec skills and knowledge, it is a free resource: https://learn.snyk.io/</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@gvoden" class="p-author h-card">Georgi_V</a> on <a href="https://medium.com/p/e11ddc97a4df"><time class="dt-published" datetime="2023-03-20T02:56:30.464Z">March 20, 2023</time></a>.</p><p><a href="https://medium.com/@gvoden/snyk-the-big-fix-and-how-to-make-it-to-the-top-as-a-devsecops-engineer-e11ddc97a4df" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 24, 2025.</p></footer></article></body></html>
