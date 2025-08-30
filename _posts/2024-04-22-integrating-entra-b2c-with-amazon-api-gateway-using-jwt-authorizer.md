@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Integrating Entra B2C with Amazon API Gateway using JWT authorizer"
-date: 2025-08-24T18:13:34
+date: 2024-04-22T18:13:34
 ---
 
 * * *

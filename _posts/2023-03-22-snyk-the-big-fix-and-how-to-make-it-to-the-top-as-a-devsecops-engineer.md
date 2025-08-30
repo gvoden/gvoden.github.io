@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Snyk — The Big Fix and how to make it to the top as a DevSecOps Engineer"
-date: 2025-08-24T18:13:36
+date: 2023-03-22T18:13:36
 ---
 
 * * *

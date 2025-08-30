@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How I passed the AWS Certified Security — Specialty exam SCS-C02 in 4 weeks!"
-date: 2025-08-24T18:13:32
+date: 2023-12-17T18:13:32
 ---
 
 * * *

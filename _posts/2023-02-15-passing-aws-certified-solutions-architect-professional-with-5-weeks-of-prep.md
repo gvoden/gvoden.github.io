@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Passing AWS Certified Solutions Architect — Professional with 5 weeks of prep"
-date: 2025-08-24T18:13:36
+date: 2023-02-15T18:13:36
 ---
 
 * * *

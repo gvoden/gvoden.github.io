@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My Journey to HashiCorp Certified: Terraform Associate (002)"
-date: 2025-08-24T18:13:36
+date: 2023-01-11T18:13:36
 ---
 
 * * *

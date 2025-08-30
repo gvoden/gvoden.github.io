@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Passing the ANS-C01 AWS Certified Advanced Networking — Specialty exam in 4 weeks!"
-date: 2025-08-24T18:13:34
+date: 2023-02-21T18:13:34
 ---
 
 * * *

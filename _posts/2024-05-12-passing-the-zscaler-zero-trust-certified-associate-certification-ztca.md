@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Passing the Zscaler Zero Trust Certified Associate certification (ZTCA)"
-date: 2025-08-24T18:13:34
+date: 2024-05-12T18:13:34
 ---
 
 * * *

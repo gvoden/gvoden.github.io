@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AWS Transit Gateway Connect to Palo Alto Firewalls -SD-WAN like architecture?"
-date: 2025-08-24T18:13:34
+date: 2023-06-30T18:13:34
 ---
 
 * * *
